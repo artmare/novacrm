@@ -1,6 +1,26 @@
 # NovaCRM
 
-NovaCRM is a fictional CRM platform portfolio case study for small service businesses. It combines a polished SaaS landing page with an interactive frontend-only CRM dashboard demo for leads, invoices, tasks, pipeline work, revenue visibility, and automation-ready follow-ups.
+NovaCRM is a fictional CRM platform portfolio case study for small service businesses. It includes a polished SaaS landing page plus a functional frontend-only CRM dashboard demo at `/dashboard`.
+
+## Landing Page
+
+The main landing page presents NovaCRM as a premium SaaS product for managing leads, clients, invoices, tasks, projects, revenue, and follow-ups. It includes a dashboard preview, business problem framing, feature cards, automation workflow messaging, case study positioning, FAQ, and calls to open the interactive demo.
+
+## Dashboard Demo
+
+The `/dashboard` route is a local-state React CRM prototype. It uses realistic mock data and does not require a backend.
+
+## Functional CRM Features
+
+- Dark sidebar app shell with responsive mobile navigation
+- Overview stats for leads, clients, invoices, revenue, conversion rate, and upcoming tasks
+- CSS-based monthly revenue chart
+- Lead status distribution and pipeline value cards
+- Lead management table with search, status filter, add lead modal, status updates, and delete actions
+- Client cards with search and a basic details modal
+- Invoice table with status filtering, paid/outstanding totals, and mark-as-paid actions
+- Task manager with add, complete/uncomplete, delete, and active/completed filters
+- Reusable UI components for shell, sidebar, stat cards, tables, modal, badge, search, filters, and charting
 
 ## Tech Stack
 
@@ -11,18 +31,6 @@ NovaCRM is a fictional CRM platform portfolio case study for small service busin
 - ESLint
 - GitHub Actions CI
 
-## Features
-
-- Premium SaaS landing page with a CSS-built dashboard preview
-- Interactive dashboard tabs for Leads, Invoices, and Tasks
-- Searchable mock lead table
-- Stateful task checkbox toggles
-- Lead pipeline columns for New Lead, Contacted, Proposal Sent, and Won
-- Invoice status cards and monthly revenue bar chart
-- Automation workflow section for lead capture, reminders, invoices, status updates, and notifications
-- Case study, testimonials, FAQ, CTA, and footer sections
-- Responsive layout with no stock imagery
-
 ## Local Setup
 
 ```bash
@@ -30,7 +38,7 @@ npm install
 npm run dev
 ```
 
-Open `http://localhost:3000` to view the project locally.
+Open `http://localhost:3000` for the landing page and `http://localhost:3000/dashboard` for the CRM demo.
 
 ## Build Command
 
@@ -40,15 +48,16 @@ npm run build
 
 ## Portfolio Positioning
 
-NovaCRM is designed as a portfolio case study that demonstrates dashboard design, CRM logic, business automation thinking, and modern frontend development. It is intentionally frontend-only and uses mock data to show how a custom CRM could support small service teams.
+NovaCRM demonstrates dashboard design, CRM interaction logic, SaaS information architecture, business automation thinking, and modern frontend development. The project is intentionally frontend-only for now, so every record change happens in local React state.
 
-## Future Backend Ideas
+## Future Backend Roadmap
 
-- Supabase lead database
+- Supabase database
 - Authentication
-- Invoice generation
+- User roles
+- Real invoice generation
 - Email reminders
-- Role-based dashboard access
+- Stripe payments
 
 ## License
 
